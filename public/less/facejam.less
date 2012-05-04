@@ -1,0 +1,69 @@
+/*******************************
+VARIABLES
+*******************************/
+
+@deepPurple:			#373242;
+@blue:					#7F7794;
+@linkColor: 			#444A77;
+
+/*******************************
+FACEJAM
+*******************************/
+
+body {
+	padding: 0;
+	background: url(../img/background.gif) repeat fixed @deepPurple;
+}
+
+#top-bar {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	background: url(../img/topbar.png) top center repeat-x;
+}
+
+.navbar {
+	margin: 50px 0 30px 20px;
+}
+
+.btn {
+	.border-radius(80px);
+}
+
+.navbar-inner {
+	padding: 10px 0;
+	background: url(../img/divider.png) bottom center no-repeat transparent;
+	.box-shadow(none);
+}
+
+#main-wrapper {
+	background: url(../img/background-overlay.png) top center no-repeat;
+}
+
+.ideas-index #actions-bar, #actions-bar, #sidebar #add-new, #single-post header, #single-post #add-reply .form-header, #add-new header, #edit-topic header {
+	background: lighten(@blue, 35%);
+}
+
+#single-post header, #single-post #add-reply .form-header, #add-new header, #edit-topic header {
+	border: 1px solid lighten(@blue, 30%);
+}
+
+.ideas-index #actions-bar, #actions-bar, #sidebar #add-new {
+	border-bottom: 1px solid lighten(@blue, 30%);
+}
+
+.navbar .brand {
+	display: block;
+	float: left;
+	position: relative;
+	width: 210px;
+	height: 35px;
+	margin: 0;
+	padding: 0;
+	background: url(../img/logo.png) no-repeat;
+	text-indent: -100%;
+	overflow: hidden;
+}
